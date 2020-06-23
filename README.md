@@ -1,4 +1,4 @@
-# MM 2.0
+# MM 2.0 - Redesigning my website
 
 ## Install dependencies
 
@@ -65,9 +65,7 @@ dist/
 
 `dist/` contains the final compiled files. It is created after running any of the gulp tasks.
 
-## Authoring Tips
-
-Edits will most likely take place in `src/assets/` and `src/pages`.
+## Resources and reminders
 
 ### Note to self
 
