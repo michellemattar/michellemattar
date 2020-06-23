@@ -4,15 +4,13 @@
 
 **Install yarn and node**
 
-It's easiest to use [homebrew](https://brew.sh/) to install node and yarn.
+Using [homebrew](https://brew.sh/) to install node and yarn.
 
 Install brew by running the following in a terminal:
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-
-Then run:
 
 ```
 brew install yarn
@@ -36,7 +34,7 @@ While in the project directory, run this in a terminal
 yarn start
 ```
 
-You should see an output line
+Output line:
 
 ```
 [Browsersync] Access URLs:
@@ -44,7 +42,7 @@ You should see an output line
        Local: http://localhost:7000
 ```
 
-Which means you can load up http://localhost:7000 in your browser and view the project.
+Load up http://localhost:7000 to view the project.
 
 ## Project structure
 
@@ -71,11 +69,11 @@ dist/
 
 Edits will most likely take place in `src/assets/` and `src/pages`.
 
-### Tips for Assets
+### Note to self
 
-Install [ImageOptim](https://imageoptim.com/mac). Under Preferences, enable the SVG options. Run all images through ImageOptim to minimize file sizes.
+Use [ImageOptim](https://imageoptim.com/mac) for all assets. Under Preferences, enable the SVG options. Run all images through ImageOptim to minimize file sizes.
 
-### Tips for Pages
+### Build notes
 
 CSS - Everything is compiled down to one css file. The entry point is `src/pages/index.css`.
 
@@ -83,6 +81,6 @@ JS - Each main directory of the site has an `index.js` that is rendered out sepa
 
 HTML - Each page of the site has an `index.html` entry point that is compiled. With the exception of `home/index.html`, the directory path of any index.html will mimic the url path. For example, the `index.html` file for the Ritual case study is `projects/ritual/index.html`.
 
-### Making new pages
+### Links for self
 
-Copy and pasting existing examples is recommended. For better understanding of the templating syntax see the [Nunjucks Docs](https://mozilla.github.io/nunjucks/templating.html),
+[Nunjucks Docs](https://mozilla.github.io/nunjucks/templating.html),
