@@ -81,4 +81,4 @@ HTML - Each page of the site has an `index.html` entry point that is compiled. W
 
 ### Links for self
 
-[Nunjucks Docs](https://mozilla.github.io/nunjucks/templating.html),
+[Nunjucks Docs](https://mozilla.github.io/nunjucks/templating.html)
