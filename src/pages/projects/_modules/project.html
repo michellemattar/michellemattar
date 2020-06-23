@@ -1,0 +1,34 @@
+{% extends "pages/_modules/base.html" %}
+
+{% block body %}
+  <div class="case-study">
+
+    <div class="project-intro">
+      <div class="project-summary">
+        {% block projectSummary %}
+        {% endblock %}
+      </div>
+      <div class="project-features">
+        <h2 class="heading">I Worked On</h2>
+        <div class="project-features-table">
+          {% block projectFeatures %}
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+
+    <div class="showcase">
+      {% block showcase %}
+      {% endblock %}
+    </div>
+
+    {% block pressLinks %}
+    {% endblock %}
+
+    {% include 'pages/projects/_modules/cont-case-studies.html' %}
+  </div>
+{% endblock %}
+
+{% block js %}
+  <script src="/projects/index.js"></script>
+{% endblock %}

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'SuisseIntl-Book-S';
+  src: url('assets/fonts/suisse_intl/suisseintl-book-web/S/SuisseIntl-Book-WebS.eot');
+  src: url('assets/fonts/suisse_intl/suisseintl-book-web/S/SuisseIntl-Book-WebS.eot?#iefix')
+      format('embedded-opentype'),
+    url('assets/fonts/suisse_intl/suisseintl-book-web/S/SuisseIntl-Book-WebS.woff2') format('woff2'),
+    url('assets/fonts/suisse_intl/suisseintl-book-web/S/SuisseIntl-Book-WebS.woff') format('woff'),
+    url('assets/fonts/suisse_intl/suisseintl-book-web/S/SuisseIntl-Book-WebS.ttf')
+      format('truetype');
+}

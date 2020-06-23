@@ -1,0 +1,17 @@
+{# Automatically populated using nav-menu-links.json #}
+<nav class="main-nav">
+  {% for link in navMenuLinks %}
+  <a href="{{link.href}}" class="mn-link {{link.color}}">
+    {{link.label}}
+    {% if link.color === 'blue' %}
+      <img src="/assets/images/blue_arrow.svg" class="mn-link-icon" />
+    {% elif link.color === 'green' %}
+      <img src="/assets/images/green_arrow.svg" class="mn-link-icon" />
+    {% elif link.color === 'pink' %}
+      <img src="/assets/images/pink_arrow.svg" class="mn-link-icon" />
+    {% else %}
+      <img src="/assets/images/black_arrow.svg" class="mn-link-icon" />
+    {% endif %}
+  </a>
+  {% endfor %}
+</nav>

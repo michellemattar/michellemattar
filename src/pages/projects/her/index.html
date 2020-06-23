@@ -1,0 +1,375 @@
+{% extends "pages/projects/_modules/project.html" %}
+
+{% set pageTitle = 'Her' %}
+
+{% from "pages/projects/_modules/project-features.html" import feature %}
+{% import "pages/projects/_modules/showcase.html" as showcase %}
+{% from "pages/projects/_modules/press-links.html" import pressLinks %}
+{% from "pages/_modules/table-row.html" import tableRow %}
+
+{% block projectSummary %}
+  <h2 class="heading">Her is</h2>
+  <p class="text">
+    The largest community for lesbian, bisexual and queer womxn to find connections, and themselves. It’s an international app and has 3+ million users actively using it to meet womxn in their area and to discuss topics on community boards worldwide.
+  </p>
+  <h2 class="heading">My Role</h2>
+  <p class="text">
+Founder Robyn Exton hired me to completely reimagine Her’s brand from the ground up. We began by composing research and insight with strategy team Wolf & Wilhelmine in New York and solidified a plan for who and what Her would be positioned for. From there, I acted as the sole designer and director for a strategically-charged, new creative identity for Her that would allow them build spaces for queer women to connect emotionally, intellectually and sexually for years to come. This work seeks to create a space where womanhood and queer identity are superpowers, where experience and fluidity leads to growth and where queer women thrive in abundance — of choices, opportunities, and connections. </p>
+{% endblock %}
+
+{% block projectFeatures %}
+  {{ tableRow('Branding',
+    [
+      'Brand Identity',
+      'Tone of Voice',
+      'Art Direction',
+      'Photoshoot Production',
+      'Copywriting',
+      'Merchandise'
+    ])
+  }}
+  {{ tableRow('Digital Product',
+    [
+      'Interactive Design System',
+      'App and Web Design',
+      'Digital Design Direction',
+      'UX Concepting'
+    ])
+  }}
+  {{ tableRow('Activation',
+    [
+      'Social Strategy',
+      'Event Design Direction',
+      'Advertising'
+    ])
+  }}
+{% endblock %}
+
+{% block showcase %}
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-ads-1.jpg'
+      }
+    ])
+  }}
+  
+    {{
+    showcase.textByImages({
+      label: 'A FLUID FUTURE',
+      text: "I designed the logo as a symbol of the future being unapologetically fluid. It takes the standard orientation of the center letter, ‘E’, and makes it a symbol of fluidity and expanding possiblity; Things are not as they might first appear to be. It's retained in a red, PSA-like badge so that it always speaks as loudly as possible and never becomes shy or apologetic in nature."
+    }, [{
+      src: '/assets/images/projects/her/michelle-mattar-her-logo-01.jpg'
+    }])
+  }}
+
+
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/her/michelle-mattar-her-art-direction-ads-2.jpg'
+    }],
+    {
+    contained: true
+    })
+  }}
+  
+    
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/her/michelle-mattar-her-art-direction-ads-3.jpg'
+    }])
+  }}
+
+  {{
+    showcase.textBlock('App Concepting',
+      'While working through the design system, I concepted screens that helped the onboarding to become more inclusive, fluid and personally engaging, rather than requiring a user to label themselves in a way that society too often asks of them.'
+    )
+  }}
+  
+   {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-app-1.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-app-2.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-app-3.jpg'
+      }])
+  }} 
+
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/her/michelle-mattar-her-art-direction.jpg'
+    } ])
+  }}
+ 
+      {{
+    showcase.textBlock('Portrait Photography',
+      "The brand’s signature photography is portraiture that employs a rainbow of seamless backgrounds, so when combined they create a spectrum effect of both color and identity. The casting was of real members of the community, no models."
+    )
+  }}
+     {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-portrait-1.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-portrait-2.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-portrait-10.jpg'
+      }])
+  }} 
+     {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-portrait-3.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-portrait-4.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-portrait-5.jpg'
+      }])
+  }} 
+     {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-portrait-7.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-portrait-8.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-portrait-9.jpg'
+      }])
+  }} 
+  
+      {{
+    showcase.textBlock('Couples Photography',
+      "These are real couples from the community helping us to show that love is love."
+    )
+  }}
+  
+  
+       {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/her/michelle-mattar-her-art-direction-couples-1.jpg'
+    },{
+          src: '/assets/images/projects/her/michelle-mattar-her-art-direction-couples-2.jpg'
+} ])
+  }}
+  
+         {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/her/michelle-mattar-her-art-direction-couples-4.jpg'
+    },{
+          src: '/assets/images/projects/her/michelle-mattar-her-art-direction-couples-3.jpg'
+} ])
+  }}
+      {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/her/michelle-mattar-her-art-website.jpg'
+} ])
+  }}
+
+  {{
+    showcase.textBlock('Tone of Voice',
+      'As a part of the brand process, I crafted a tone of voice that encourages queer womxn to
+explore themselves and live fearlessly in the world, and matches the confidence and future-facing outlook of the visual branding.'
+    )
+  }}
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-tone-1.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-tone-2.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-tone-3.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-tone-4.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-tone-5.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-tone-6.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-tone-7.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-tone-8.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+  
+      {{
+    showcase.textByImages({
+      label: 'Instagram',
+      text: "Her's new instagram grid strategy employs a rainbow effect and is bold, vibrant, celebratory and inclusive. As much as possible, it create a dialogue for their audience to engage with."
+    }, [{
+      src: '/assets/images/projects/her/michelle-mattar-her-instagram.jpg'
+    }])
+  }}
+  
+ 
+         {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-conceptual-2.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-conceptual-3.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-conceptual-5.jpg'
+      }])
+  }} 
+  
+ 
+    {{
+    showcase.textBlock('Communities',
+      'One of the reasons why Her decided to make a rebrand happen in 2018 was the introduction of communities. These are Reddit-style boards that allow the queer community on Her to engage beyond one-on-one. While working through brand directions, I made sure that the identity could expand itself into community driven, thought-leadership avenues.'
+    )
+  }}
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-app-communities-1.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-app-communities-2.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-app-communities-3.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+<br><br><br><br>
+    {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/her/michelle-mattar-her-advertising-4.jpg'
+    } ])
+  }}
+  
+      {{
+    showcase.imageRow([{
+          src: '/assets/images/projects/her/michelle-mattar-her-advertising-5.jpg'
+          } ])
+  }}
+  
+  
+    {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/her/michelle-mattar-her-queerand.jpg'
+    }])
+  }}
+  
+    {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/her/michelle-mattar-her-queerand-2.jpg'
+    }],
+    {
+    contained: true
+    })
+  }}
+
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-a.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-b.jpg'
+      }])
+  }} 
+  
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-d.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-art-direction-e.jpg'
+      }])
+  }} 
+  
+ 
+     {{
+    showcase.textBlock('The Style Guide',
+      ''
+    )
+  }}
+ 
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-style-guide-1.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-style-guide-7.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-style-guide-4.jpg'
+      }])
+  }}
+  
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-style-guide-2.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-style-guide-3.jpg'
+      },
+      {
+        src: '/assets/images/projects/her/michelle-mattar-her-style-guide-5.jpg'
+      }
+    ])
+  }}
+  
+  
+    {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/her/michelle-mattar-her-print.jpg'
+    }])
+  }}
+  
+  
+{% endblock %}
+
+{% block pressLinks %}
+  {{ pressLinks([
+    {
+      source: 'Time',
+      label: 'The Story Behind the Most Popular Lesbian Dating App',
+      href: 'http://time.com/4655865/her-lesbian-dating-app/'
+    },
+    {
+      source: 'Mic',
+      label: 'Lesbian Dating App Offers Something Awesome That Tinder Never Could',
+      href: 'https://mic.com/articles/113086/lesbian-dating-app-offers-something-awesome-that-tinder-never-could#.G57fsJRoz'
+    }  ]) }}
+{% endblock %}

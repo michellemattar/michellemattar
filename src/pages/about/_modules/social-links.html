@@ -1,0 +1,10 @@
+{% macro socialLinks(linkList) %}
+  {% set color = cycler("green", "blue", "red", "pink") %}
+  <ul class="afsl-link-list">
+  {% for link in linkList %}
+    <li class="afsl-link-list-item {{ color.next() }}">
+      <a href="{{ link.href }}" rel="noopener">{{ link.label }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+{% endmacro %}

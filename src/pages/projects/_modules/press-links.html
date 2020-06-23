@@ -1,0 +1,13 @@
+{% macro pressLinks(pressList) %}
+  <div class="press-links">
+    <h2 class="heading press-heading">Read about it:</h2>
+    <div class="link-list">
+      {% for item in pressList %}
+        <a class="press-link" href="{{ item.href }}" target="_blank" rel="noopener">
+          <span class="link-source">{{ item.source }}</span>
+          <span class="link-label">{{ item.label }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endmacro %}

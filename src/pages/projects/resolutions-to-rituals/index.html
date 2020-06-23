@@ -1,0 +1,333 @@
+{% extends "pages/projects/_modules/project.html" %}
+
+{% set pageTitle = 'Resolutions to Rituals' %}
+
+{% from "pages/projects/_modules/project-features.html" import feature %}
+{% import "pages/projects/_modules/showcase.html" as showcase %}
+{% from "pages/projects/_modules/press-links.html" import pressLinks %}
+{% from "pages/_modules/table-row.html" import tableRow %}
+
+{% block projectSummary %}
+  <h2 class="heading">The Challenge</h2>
+  <p class="text">
+    70%  of  New Years' resolutions  are abandoned  within  month  one and  only  8%  of  people actually  achieve  them. With New Years' being an important time of year for health categories, and thus Ritual– a women's vitamin, we wanted to create a campaign that was a representation of our belief in the power of healthy habit and not another false 'new year, new me' promise. 
+  </p>
+  <h2 class="heading">My Role</h2>
+  <p class="text">
+    While Creative Director at Ritual, I pitched a few concepts in the weekly marketing meeting as to how we could approach the holiday as a habit company rather than as a vitamin company. Collectively, we rallied around the concept of creating a microsite that would build a custom bot on Facebook Messenger, which both reminds and guides users on how to develop an easy-to-maintain habit. Facebook Messenger supplied us a direct line of communication to educate prospecting customers on how the small, daily task of taking a vitamin can have a big impact on health, just like their New Years Ritual.
+  </p>
+{% endblock %}
+
+{% block projectFeatures %}
+  {{ tableRow('Strategy',
+    [
+      'Concepting',
+      'Research',
+      'Acquisition Stragegy',
+      'Engagement Strategy'
+    ])
+  }}
+  {{ tableRow('Design',
+    [
+      'Campaign Art Direction',
+      'Web Design',
+      'User Testing',
+      'Marketing Emails'
+    ])
+  }}
+  {{ tableRow('Activation',
+    [
+      'Social Strategy',
+      'Print Design',
+      'Advertising',
+      'Social Reach'
+    ])
+  }}
+{% endblock %}
+
+{% block showcase %}
+
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-intro-2.jpg'
+      },
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-intro-1.jpg'
+      },
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-intro-3.jpg'
+      }
+    ], {
+      imageSpacing: false
+    })
+  }}
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-intro-6.jpg'
+      },
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-intro-5.jpg'
+      },
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-intro-4.jpg'
+      }
+    ], {
+      imageSpacing: false
+    })
+  }}
+
+
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/home/logos/ritual-logo.svg'
+    }], {
+      contained: true,
+      extraContainerPadding: true
+    })
+  }}
+
+  {{
+    showcase.textByImages({
+      label: 'How it works',
+      text: "Resolutions to Rituals is a microsite that feeds data into Facebook Messenger bot, which designed to help you start and keep a habit."
+    }, [{
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-explain-1.png'
+    },
+    {
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-explain-2.png'
+    },
+    {
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-explain-3.png'
+    },
+    {
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-explain-4.png'
+    }])
+  }}
+
+  
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-homepage.jpg'
+    }],
+    {
+    contained: true,
+    noContainerPadding: true
+    })
+  }}
+  
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-options.jpg'
+    }],
+    {
+    contained: true
+    })
+  }}
+  
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-water-page-a.jpg'
+    },
+    {
+    src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-movement-page-a.jpg'
+	} ])
+  }}
+
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-1.jpg'
+      },
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-2.jpg'
+      },
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-3.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-4.jpg'
+      },
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-5.jpg'
+      },
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-6.png'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+
+
+  
+     {{
+    showcase.textBlock('The Quiz',
+      "Once a user selects a New Years challenge, they're entered into an interactive quiz that feeds data and customizes their bot."
+    )
+  }}
+
+    {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-time-question.gif'
+    }],{
+    contained: true,
+    noContainerPadding: true
+    })
+  }}
+  
+  
+        {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-water-question.gif'
+    }],{
+    contained: true
+    })
+  }}
+
+      {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-movement-question.gif'
+    }],{
+    contained: true,
+    noContainerPadding: true
+    })
+  }}
+  
+     {{
+    showcase.textBlock('Your Dashboard',
+      "Once you've started the challenge, the microsite serves as a dashboard to both track and share your progress, and to interact with the community completing the challenge with you."
+    )
+  }}
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-mobile-3.jpg'
+      },
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-mobile.gif'
+      }
+    ], {
+      contained: true
+    })
+  }}
+  
+  
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-carousel.gif'
+      }
+    ])
+  }}
+  
+     {{
+    showcase.textBlock('The Bot',
+      'The bot itself is a combination of education, reminders and benefits. It lasts for over a month (a proven amount of time that quanitfiably makes the success rate of a resolution higher) and has content articles, interactive data, helpful daily reminders and a fun, branded personality.'
+    )
+  }}
+  
+  
+  {{ showcase.video([
+    {
+      src: '/assets/videos/projects/resolutions/michelle-mattar-ritual-resolutions-chat.mp4',
+      type: 'mp4'
+    },
+      {
+      src: '/assets/videos/projects/resolutions/michelle-mattar-ritual-resolutions-chat.webm',
+      type: 'webm'
+    },
+      {
+      src: '/assets/videos/projects/resolutions/michelle-mattar-ritual-resolutions-chat.ogg',
+      type: 'ogg'
+    }
+  ],
+  {
+  noContainerPadding:true
+  }) }}
+
+    
+  
+   {{
+    showcase.textBlock('The Campaign',
+      'Thousands of people joined the challenge, and it comprised of both new and prospecting customers. To reach them, we messaged it as a campaign in our holiday packaging, targeted ads to New Years shoppers, and implemented smart sharing features to help the community at launch spread the word.'
+    )
+  }}
+
+    {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-mailer.jpg'
+    } ])
+  }}
+      {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-mailer-2.jpg'
+    } ])
+  }}
+      {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-print.jpg'
+    }],{
+    contained: true
+    })
+  }}
+        {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-share.jpg'
+    } ])
+  }}
+  
+    {{
+    showcase.imageSlider([
+      {
+        thumbnail: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-email-2.jpg',
+        full: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-email-2.jpg'
+      },
+            {
+        thumbnail: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-email-1.jpg',
+        full: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-email-1.jpg'
+      }
+    ])
+  }}
+
+  
+    {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/resolutions/michelle-mattar-ritual-resolutions-about.jpg'
+    }])
+  }}
+  
+{% endblock %}
+
+{% block pressLinks %}
+  {{ pressLinks([
+    {
+      source: 'Business Insider',
+      label: '21 Hottest Woman-Founded Startups to Watch in 2017'
+    },
+    {
+      source: 'Well & Good',
+      label: 'The Buzzy Multivitamin Everyone is Talking About'
+    },
+    {
+      source: 'Byrdie',
+      label: 'Are Cool Girl Vitamins a Thing? They Are Now Thanks to This New Brand'
+    },
+    {
+      source: 'Forbes',
+      label: '21 Hottest Woman-Founded Startups to Watch in 2017'
+    }
+  ]) }}
+{% endblock %}

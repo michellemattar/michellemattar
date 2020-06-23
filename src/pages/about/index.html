@@ -1,0 +1,175 @@
+{% extends "pages/_modules/base.html" %}
+
+{% set pageTitle = 'About' %}
+
+{% from "pages/_modules/table-row.html" import tableRow %}
+{% from "pages/_modules/typed-text.html" import typedText %}
+{% from "pages/about/_modules/article-slider.html" import articleSlider %}
+{% from "pages/about/_modules/about-press-links.html" import aboutPressLinks %}
+{% from "pages/about/_modules/social-links.html" import socialLinks %}
+
+{% block body %}
+
+{# Fixed Image by text #}
+<div class="fixed-image-by-text">
+  <div class="fibt-image">
+    <div class="fibt-image-background"
+         style="background-image: url('/assets/images/about/portrait.jpg')">
+      <img src="/assets/images/about/portrait.jpg" />
+    </div>
+
+  </div>
+  <div class="fibt-text">
+    <div class="fibt-text-inner">
+      <h2 class="heading">{{ typedText("HEY") }}</h2>
+      <p class="text">
+        I'm Michelle Mattar, a self-employed Creative Director, designer, storyteller and idea person. I'm based in NYC nowadays but pay frequent, sunny visits to West Coast clients.</p>
+      <p class="text">
+        I enjoy the challenge of building meaningful brands and lovingly raising them to growth. In some instances, I start at the genesis of an idea and work holistically to help founders with fundraising, build their brand, and launch with a strong creative story executed across every touchpoint.
+      </p>
+      <p class="text">
+        I’m currently consulting with companies of all sizes to help them realize their market and creative potential. If you’re thinking about working together in the future, say hi! I can't always kick-off immediately so let’s start talking.
+      </p>
+
+      <div class="experience">
+        <h3 class="exp-heading heading pink">Previously</h3>
+        <ul class="exp-list pink">
+          <li class="exp-list-item">
+            Brand Designer at <a href="http://redantler.com" rel="noopener">Red Antler</a>
+          </li>
+          <li class="exp-list-item">
+            Creative Director at <a href="http://ritual.com" rel="noopener">Ritual</a>
+          </li>
+        </ul>
+        <h3 class="exp-heading heading green">currently</h3>
+        <ul class="exp-list green">
+          <li class="exp-list-item">
+            Building Glowbar
+          </li>
+          <li class="exp-list-item">
+            Consulting, <a href="http://snowehome.com" rel="noopener">Snowe</a>
+          </li>
+          <li class="exp-list-item">
+            Advisor, <a href="http://ritual.com" rel="noopener">Ritual</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{# What I do #}
+
+<div class="page-container what-i-do">
+  <h2 class="heading">What I Do</h2>
+  <div class="what-i-do">
+    {{
+      tableRow('Fundraising', ['Go-to-Market Strategy', 'Fundraising Materials', 'Product Strategy'])
+    }}
+
+    {{
+      tableRow('Branding', ['Brand Identity', 'Tone of Voice', 'Art Direction','Shoot Production', 'Packaging', 'Illustration'])
+    }}
+
+    {{
+      tableRow('Digital Product', ['Content Strategy', 'Web Design', 'App Design', 'User Testing', 'Build-Out Production'])
+    }}
+
+    {{
+      tableRow('Activation', ['Launch Strategy', 'Interiors', 'Social Media Strategy', 'PR and Event Concepting', 'Advertising'])
+    }}
+  </div>
+</div>
+
+{# Blog Posts Slider #}
+<div class="blog-section">
+  <div class="bs-text">
+    <h2 class="heading">I Write Sometimes</h2>
+    <div class="text">
+      
+    </div>
+  </div>
+  {{ articleSlider([
+    {
+      image: '/assets/images/about/blog3.jpg',
+      href: 'http://lingoappblog.squarespace.com/home/2017/4/26/designing-with-story-qa-with-ritual-creative-director-michelle-mattar',
+      label:  'Featured by Lingo',
+      description: 'Designing with Story: Q&A with Creative Director Michelle Mattar'
+    },
+        {
+      image: '/assets/images/about/blog2.jpg',
+      href: 'https://www.forbes.com/forbes/welcome/?toURL=https://www.forbes.com/sites/forbesagencycouncil/2018/05/14/digital-brand-building-tactics-for-an-ever-changing-world/&refURL=https://www.forbes.com/sites/forbesagencycouncil/people/michellemattar/&referrer=https://www.forbes.com/sites/forbesagencycouncil/people/michellemattar/',
+      label:  'Written for Forbes',
+      description: 'Digital Brand Building Tactics for an Ever-Changing World'
+    },
+        {
+      image: '/assets/images/about/blog4.jpg',
+      href: 'https://ritual.com/blogs/my-ritual/how-this-creative-stopped-taking-the-pill-and-designed-her-own-health',
+      label:  'Written for Ritual',
+      description: 'How I Stopped Taking the Pill and Started Mastering Myself'
+    },
+    {
+      image: '/assets/images/about/blog1.jpg',
+      href: 'https://www.forbes.com/sites/forbesagencycouncil/2018/01/29/five-types-of-people-every-entrepreneur-should-have-in-their-circle/',
+      label:  'Written for Forbes',
+      description: 'Five Types Of People Every Entrepreneur Should Have In Their Circle'
+    }
+  ]) }}
+</div>
+
+<div class="about-footer page-container">
+
+  {# Contact #}
+  <div class="af-contact">
+    <h2 class="heading">Get In Touch</h2>
+    <a href="mailto:m@michellemattar.com">
+      <img src="/assets/images/about/pencil.svg" class="af-contact-icon">
+      <span>m@michellemattar.com</span>
+    </a>
+  </div>
+
+  {# Press links #}
+  <div class="af-press-links">
+    <h2 class="heading">Work Mentioned On</h2>
+    {{ aboutPressLinks([
+      {
+        label: 'The Dieline',
+        href: 'http://www.thedieline.com/blog/2018/3/5/ritual'
+      },
+      {
+        label: 'Fast Co. Innovation by Design Awards',
+        href: 'https://www.fastcodesign.com/innovation-by-design/2017/category/branded-environments'
+      }
+    ]) }}
+  </div>
+
+  {# Social #}
+  <div class="af-social">
+    <h2 class="heading">Follow</h2>
+    {{ socialLinks([
+      {
+        label: 'Instagram',
+        href: 'http://www.instagram.com/michellemattar'
+      },
+      {
+        label: 'Behance',
+        href: 'http://www.behance.net/michellemattar'
+      },
+      {
+        label: 'Twitter',
+        href: 'http://www.twitter.com/michelle_mattar'
+      },
+      {
+        label: 'Working Not Working',
+        href: 'https://workingnotworking.com/michelle_mattar'
+      }
+    ]) }}
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block js %}
+  <script src="/about/index.js"></script>
+{% endblock %}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Black Arrow@2x</title>
+    <desc>Created with Sketch</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 16 0 16 16 0 16"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Black-Arrow">
+            <g id="Page-1">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M15.0917155,0.382365788 L2.47629185,0.000122615765 C2.17353033,-0.00636524571 1.91942692,0.245580042 1.91456111,0.525639395 C1.9096953,0.810564645 2.15568903,1.07818893 2.44006859,1.08738007 L13.8011945,1.43394 L0.158544312,15.077372 C-0.0528481039,15.2882275 -0.0528481039,15.6304622 0.158544312,15.8418584 C0.369396082,16.0527139 0.711624724,16.0527139 0.92301714,15.8418584 L14.566208,2.19842635 L14.9127618,13.5602938 C14.9219527,13.8446784 15.1895723,14.0950017 15.4739519,14.0858105 C15.7588721,14.0766194 15.9989187,13.8430564 16,13.5240699 L15.6177636,0.907882567 C15.5842436,0.584030149 15.3268963,0.402910682 15.0917155,0.382365788" id="Fill-1" stroke="#000000" stroke-width="0.5" fill="#000000" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,303 @@
+{% extends "pages/projects/_modules/project.html" %}
+
+{% set pageTitle = 'The Whitespace' %}
+
+{% from "pages/projects/_modules/project-features.html" import feature %}
+{% import "pages/projects/_modules/showcase.html" as showcase %}
+{% from "pages/projects/_modules/press-links.html" import pressLinks %}
+{% from "pages/_modules/table-row.html" import tableRow %}
+
+{% block projectSummary %}
+  <h2 class="heading">The Whitespace is</h2>
+  <p class="text">
+The first-ever shoppable space for online home essentials brand Snowe. Located in NYC's Union Square, the ‘next-generation’ retail experience serves primarily as a venue for customers to visit for inspiration and to make purchases on site for subsequent free delivery. But it also blends a work space, a showroom, a content creation studio, a dynamic event space, and a testing ground.
+  </p>
+  <h2 class="heading">My Role</h2>
+  <p class="text">
+I was responsible for conceptualizing and designing an extension of the Snowe brand for The Whitespace that channelled it into a high-touch, ecommerce-integrated retail experience. Founder Andres Modak, interior designer Morgan Wendelborn and I spearheaded vision for their first-ever brick and mortar as an entirely new shopping experience and unique destination to stand ground amongst the goings-on of Union Square. This project builds off of Snowe's brand identity system, which was created at Red Antler.
+  </p>
+{% endblock %}
+
+{% block projectFeatures %}
+  {{ tableRow('Branding',
+    [
+      'Brand Identity',
+      'Tone of Voice',
+      'Art Direction',
+      'Illustration'
+    ])
+  }}
+  {{ tableRow('Digital Product',
+    [
+      'Web Design',
+      'Marketing Emails'
+    ])
+  }}
+  {{ tableRow('Activation',
+    [
+      'Interiors',
+      'Social Strategy',
+      'Event Design'
+    ])
+  }}
+{% endblock %}
+
+{% block showcase %}
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-the-whitespace-snowe-intro.jpg'
+      },
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-the-whitespace-intro-2.jpg'
+      }
+    ], {
+      contained: true
+    })
+  }}
+  
+    
+    {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/whitespace/michellemattar-whitespace-logo.jpg'
+    }], {
+    })
+  }}
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-imggrid8.jpg'
+      },
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-imggrid6.jpg'
+      },
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-imggrid5.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-imggrid2.jpg'
+      },
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-imggrid7.jpg'
+      },
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-imggrid4.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+  
+  
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-imggrid1.jpg'
+      },
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-imggrid3.jpg'
+      },
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-imggrid9.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michelle-mattar-whitespace-location.jpg'
+      }
+    ], {
+      contained: true
+    })
+  }}
+  
+        {{
+    showcase.textBlock('Part Retail Concept',
+      "At the Whitespace, you can create a registry, shop Snowe's products for subsequent in-home delivery, see demos of product durability and touch and feel fabric swatches. We created wayfinding and take-aways that help customers browse autonomously, but with a bit of whimsy in the experience."
+    )
+  }}
+
+
+  
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michelle-mattar-the-whitespace-snowe-entry-a.jpg'
+      },
+      {
+        src: '/assets/images/projects/whitespace/michelle-mattar-the-whitespace-snowe-entry.jpg'
+      }
+    ])
+  }}
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-whitespace-shop.jpg'
+      },
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-whitespace-bags.jpg'
+      }
+    ])
+  }}
+
+
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-whitespace-shoppingguide.jpg'
+      }], {
+      contained: true
+    })
+    }}
+    
+        {{
+    showcase.textBlock('Part Lab',
+      "The Whitespace serves as a testing ground for new products, and an event space to bring in collaborators to help bring Snowe products to life in an intimiate setting. It's where the team develops new ideas and puts them to play, and hosts events that elevate the everyday."
+    )
+  }}
+
+    
+     {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-whitespace-bar.jpg'
+      },
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-whitespace-coastera.jpg'
+      }
+    ])
+  }}
+  
+        {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-whitespace-menu.jpg'
+      }], {
+      contained: true
+    })
+  }}
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-whitespace-event.jpg'
+      },
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-whitespace-event-2.jpg'
+      } ])
+  }}
+  
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-totes.jpg'
+      }], {
+      contained: true
+    })
+  }}
+     
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-matches.jpg'
+      }],
+      {
+      contained: true,
+      noContainerPadding: true
+      })
+  }}
+       
+   
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-directmail.jpg'
+      }
+    ], {
+      contained: true
+    })
+  }}
+  
+  {{
+    showcase.textByImages({
+      label: 'Part Playground',
+      text: "Before The Whitespace, each shoot had a lot of cumbersome logistics: Figuring out how to make a bed without a mattress, transporting furniture and retouching out seams of marble tiles... to mention a few we won't miss. Now we have a real home to shoot in, which we use as both a set and a studio environment for all of our creative and content needs."
+    }, [{
+      src: '/assets/images/projects/whitespace/michelle-mattar-snowe-sleep.gif'
+    },
+    {
+      src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-hr.jpg'
+    },
+    {
+      src: '/assets/images/projects/whitespace/michelle-mattar-whitespace-content-1.jpg'
+    },
+    {
+      src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-hr.jpg'
+    },
+    {
+      src: '/assets/images/projects/whitespace/michelle-mattar-whitespace-content-2.jpg'
+    },
+    {
+      src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-hr.jpg'
+    },
+    {
+      src: '/assets/images/projects/whitespace/michelle-mattar-whitespace-content-3.jpg'
+    },
+    {
+      src: '/assets/images/projects/whitespace/michellemattar-thewhitespace-hr.jpg'
+    },
+    {
+      src: '/assets/images/projects/whitespace/michelle-mattar-snowe-content-5.gif'
+    }],{
+    imageSpacing:true
+	}) }}
+
+      {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/whitespace/michellemattar-the-whitespace-intro-3.jpg'
+    }], {
+    contained: false
+    })
+  }}
+
+{% endblock %}
+
+{% block pressLinks %}
+  {{ pressLinks([
+    {
+      source: 'Domino',
+      label: 'This Retail Lab is the Newest Must-Visit Design Stop in NYC',
+      href: 'https://domino.com/snowe-the-whitespace'
+    },
+    {
+      source: 'Elle',
+      label: "This Couple's Insanely Chic Apartment Is Also Their Storefront",
+      href: 'https://www.elle.com/culture/art-design/a46305/rachel-cohen-andres-modak-snowe-living/'
+    },
+    {
+      source: 'Lonny',
+      label: 'Snowe Takes The Showroom Experience To The Next Level',
+      href: 'http://www.lonny.com/See+It+Now/articles/iNkw1ighoeK/Snowe+Takes+Showroom+Experience+Next+Level'
+    },
+    {
+      source: 'Wallpaper Mag',
+      label: "Snowe's new concept space is an apartment, showroom and retreat",
+      href: 'https://www.wallpaper.com/design/online-homewares-brand-snowe-opens-retail-space#1TsxkMmyCRAuCazQ.99'
+    }
+  ]) }}
+{% endblock %}

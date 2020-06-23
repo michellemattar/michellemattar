@@ -1,0 +1,57 @@
+{
+  "projectLinks": {
+    "rockets": {
+      "name": "Rockets of Awesome",
+      "title": "The Smarter Way to Shop for Kids",
+      "href": "/projects/rockets-of-awesome/",
+      "mobileImage": "/assets/images/home/mobile/rockets-of-awesome-mobile@2x.jpg",
+      "desktopImage": "/assets/images/home/rockets-of-awesome@2x.jpg",
+      "logoImage": "/assets/images/home/logos/rockets-of-awesome-logo.svg"
+    },
+
+    "ritual": {
+      "name": "Ritual",
+      "title": "The Future of Vitamins is Clear",
+      "href": "/projects/ritual/",
+      "mobileImage": "/assets/images/home/mobile/ritual-mobile@2x.jpg",
+      "desktopImage": "/assets/images/home/ritual@2x.jpg",
+      "logoImage": "/assets/images/home/logos/ritual-logo.svg"
+    },
+    
+      "resolutionstorituals": {
+      "name": "Resolutions to Rituals",
+      "href": "/projects/resolutions-to-rituals/",
+      "title": "Rethinking New Years Resolutions",
+      "mobileImage": "/assets/images/home/mobile/resolutions-mobile@2x.jpg",
+      "desktopImage": "/assets/images/home/resolutions@2x.jpg",
+      "logoImage": "/assets/images/home/logos/ritual-logo.svg"
+    },
+
+    "her": {
+      "name": "Her",
+      "title": "Trans, Femme, They, Them: Meet Her.",
+      "href": "/projects/her/",
+      "mobileImage": "/assets/images/home/mobile/her-mobile@2x.jpg",
+      "desktopImage": "/assets/images/home/her-b@2x.jpg",
+      "logoImage": "/assets/images/home/logos/her-logo.svg"
+    },
+
+    "snowe": {
+      "name": "Snowe",
+      "title": "Home Essentials for Whatever Life Brings",
+      "href": "/projects/snowe/",
+      "mobileImage": "/assets/images/home/mobile/snowe-mobile@2x.jpg",
+      "desktopImage": "/assets/images/home/snowe@2x.jpg",
+      "logoImage": "/assets/images/home/logos/snowe-logo.svg"
+    },
+    
+    "thewhitespace": {
+      "name": "The Whitespace",
+      "title": "Part Retail Concept, Part Lab, Part Playground",
+      "href": "/projects/the-whitespace/",
+      "mobileImage": "/assets/images/home/mobile/whitespace-mobile@2x.jpg",
+      "desktopImage": "/assets/images/home/whitespace-b@2x.jpg",
+      "logoImage": "/assets/images/home/logos/whitespace-logo.svg"
+    }
+  }
+}

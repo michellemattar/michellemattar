@@ -1,0 +1,21 @@
+{% macro caseStudy(project) %}
+  <a href="{{ project.href }}" class="ccs-case">
+    <div class="ccs-image-wrapper">
+      <img src="{{ project.mobileImage }}" class="ccs-image" />
+    </div>
+    <div class="ccs-logo-wrapper">
+      <img src="{{ project.logoImage }}" alt="{{ project.name }}" class="ccs-logo" />
+    </div>
+  </a>
+{% endmacro %}
+
+<div class="cont-case-studies">
+  <div class="ccs-inner">
+    {{ caseStudy(projectLinks.ritual) }}
+    {{ caseStudy(projectLinks.her) }}
+    {{ caseStudy(projectLinks.rockets) }}
+    {{ caseStudy(projectLinks.snowe) }}
+    {{ caseStudy(projectLinks.thewhitespace) }}
+    {{ caseStudy(projectLinks.resolutionstorituals) }}
+  </div>
+</div>

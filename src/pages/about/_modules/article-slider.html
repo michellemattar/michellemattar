@@ -1,0 +1,29 @@
+{% macro articleSlider(articleList) %}
+  <div class="article-slider-wrapper">
+    <div class="article-slider">
+    {% for articleBatch in articleList | batch(3) %}
+      <div class="as-batch" data-set="{{ loop.index0 }}" {% if loop.first %}data-active="true"{% endif %}>
+      {% for article in articleBatch %}
+        <a class="as-item" href="{{ article.href }}" rel="noopener">
+          <div class="as-image-wrapper">
+            <img class="as-image" src="{{ article.image }}" />
+          </div>
+          <div class="as-text">
+            <p class="as-label">{{ article.label }}</p>
+            <p class="as-description">{{ article.description }}</p>
+          </div>
+        </a>
+      {% endfor %}
+      </div>
+    {% endfor %}
+    </div>
+    <div class="as-pager-wrapper">
+      <button class="as-pager-label">More Articles</button>
+      <div class="as-pager">
+        {% for articleBatch in articleList | batch(3) %}
+          <button data-set="{{ loop.index0 }}" {% if loop.first %}data-active="true"{% endif %} aria-label="view set {{ loop.index0 }}" class="as-pager-button"></button>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endmacro %}

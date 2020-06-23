@@ -1,0 +1,40 @@
+<header class="main-header {% if hideHeader %}hidden{% endif %}">
+  <div class="mh-inner">
+    <div class="mh-contents-left">
+      <button class="mh-nav-toggle" aria-label="toggle navigation menu">
+        <div class="mh-nav-toggle-inner">
+          <span class="toggle-bar top"></span>
+          <span class="toggle-bar middle"></span>
+          <span class="toggle-bar bottom"></span>
+        </div>
+      </button>
+
+      <div class="mh-contents-divider"></div>
+
+      <div class="mh-breadcrumb">
+        {% if pageTitle %}
+
+          <a href="/" class="mh-breadcrumb-back-link">Michelle Mattar</a>
+          <img src="/assets/images/caret_right.svg" class="mh-breadcrumb-separator" />
+          <h1 class="mh-title">
+            {{ pageTitle }}
+          </h1>
+
+        {% else %}
+
+          <h1 class="mh-title chrome">
+            Michelle Mattar
+          </h1>
+
+        {% endif %}
+      </div>
+    </div>
+
+    {#
+    <div class="mh-contents-left">
+      <a href="/jobs" class="mh->I'M HIRING</a>
+    </div>
+    #}
+  </div>
+  {% include "./nav.html" %}
+</header>

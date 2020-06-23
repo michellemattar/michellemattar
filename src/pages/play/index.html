@@ -1,0 +1,153 @@
+{% extends "pages/_modules/base.html" %}
+
+{% set pageTitle = 'Play' %}
+
+{% from "pages/_modules/typed-text.html" import typedText %}
+
+{% from "pages/play/_modules/play-images.html" import playImages %}
+
+{% block body %}
+<div class="play-wrapper">
+  <div class="play-text">
+    <h2 class="heading">{{ typedText('This is fun') }}</h2>
+    <p class="text">
+      Sometimes I get extra lucky and am hired to make things just-for-the-heck-of-it. Other times, I find time to make things I just feel like making. This is a place that I made to put them.
+    </p>
+  </div>
+    {{ playImages([
+      {
+        src: '/assets/images/play/michelle_mattar_pork_bacon_illustration.gif',
+        alt: 'Lorem',
+        caption: 'For Snowe'
+      },
+   
+      {
+        src: '/assets/images/play/michelle_mattar_egg_illustration.gif',
+        alt: '',
+        caption: 'For Snowe'
+      },
+      {
+        src: '/assets/images/play/michelle_mattar_broth_illustration.gif',
+        alt: '',
+        caption: 'For Snowe'
+      },
+      {
+        src: '/assets/images/play/michelle-mattar-ritual-play.jpg',
+        alt: '',
+        caption: 'For Ritual'
+      },
+      {
+        src: '/assets/images/play/play-outc.jpg',
+        alt: '',
+        caption: '',
+        caption2: "In Lebanon exists article 534, which says sexual acts that contradict the laws of nature can be punished by up to one year in prison. Meaning: being gay is illegal. Also in Lebanon is my family, some of which are gay.",
+        caption3: "My cousin Kim was seeking to create a future for Beirut with more tolerance, inspired by her brother who remained closeted and fearful of his true self for 24 years because of Lebanon's lack of tolerance. It was something we'd discuss when I came to visit Beirut, and we both were disheartened that the only places of refuge were underground, illegal nightclubs. The queer community needed a place to be themselves that wasn't a potentially dangerous place to be.",
+                caption4: "Enter: Out. It's not just a beauty salon, it's a safe space where LGBTIQ+ individuals can let loose, relax and practice self-care without any judgement. I helped Kim realize the creative vision of Out, which has succeeded in making a step toward tolerance, and is hopefully the start of much-needed change in Lebanon."
+      },
+            {
+        src: '/assets/images/play/play-outb.jpg',
+        alt: '',
+        caption: ''
+      },
+      {
+        src: '/assets/images/play/play-outd.jpg',
+        alt: '',
+        caption: 'For Family'
+      },
+        {
+        src: '/assets/images/play/michelle_mattar_coffee_art_direction.gif',
+        alt: '',
+        caption: 'For Snowe'
+      },
+      {
+        src: '/assets/images/play/michelle_mattar_pins-1.jpg',
+        caption: 'Pins made as a gift for friends'
+      },
+       {
+        src: '/assets/images/play/michelle_mattar_pins.jpg',
+        alt: '',
+        caption: 'Pins made as a gift for friends'
+      },
+      {
+	  src: '/assets/images/play/michelle_mattar_poster_design.jpg',
+        alt: '',
+        caption: ''
+      },
+            {
+        src: '/assets/images/play/michelle_mattar_broome_and_mercer_invites.jpg',
+        alt: '',
+        caption: 'For Broome & Mercer'
+      },
+      {
+        src: '/assets/images/play/michelle-mattar-lylas-play.jpg',
+        alt: '',
+        caption: 'LYLAS zine with Chris Bernabeo'
+      },
+            {
+        src: '/assets/images/play/michelle_mattar_balance_illustration.gif',
+        alt: '',
+        caption: 'For Ritual'
+      },
+            {
+        src: '/assets/images/play/michelle_mattar_beach_babe_illustration.gif',
+        alt: '',
+        caption: 'For Ritual'
+      },
+            {
+        src: '/assets/images/play/michelle_mattar_play_design.gif',
+        alt: '',
+        caption: 'Made for a presentation'
+      },
+            {
+        src: '/assets/images/play/snowe-lamp.gif',
+        alt: '',
+        caption: 'For Snowe'
+      },
+      {
+        src: '/assets/images/play/michelle_mattar_tote_bag_design.jpg',
+        alt: 'Invites',
+        caption: 'Just for fun'
+      },
+      {
+        src: '/assets/images/play/michelle_mattar_alternative_sandwiches_art_direction_2.jpg',
+        alt: '',
+        caption: ''
+      },
+      {
+	  src: '/assets/images/play/michelle_mattar_alternative_sandwiches_art_direction.jpg',
+        alt: '',
+        caption: 'Alternative Sandwiches for Snowe'
+      },
+            {
+        src: '/assets/images/play/michelle_mattar_hydrated.jpg',
+        alt: 'Invites',
+        caption: 'Just for fun'
+      },
+            {
+        src: '/assets/images/projects/whitespace/michelle-mattar-snowe-content-5.gif',
+        alt: 'Invites',
+        caption: 'FOR SNOWE'
+      },
+      {
+        src: '/assets/images/play/michelle_mattar_ritual_bookmarks.jpg',
+        alt: 'Invites',
+        caption: 'Bookmark for Ritual'
+      },
+        {
+        src: '/assets/images/play/michelle-mattar-snowe-cheeseboard-1.jpg',
+        alt: 'Invites',
+        caption: 'For Snowe'
+      },
+      {
+        src: '/assets/images/play/michelle_mattar_iphone.jpg',
+        alt: '',
+        caption: 'For Her'
+      },
+      {
+        src: '/assets/images/play/michelle_mattar_birthday_cake_bed_art_direction.jpg',
+        alt: 'Invites',
+        caption: 'For Snowe'
+      }
+    ]) }}
+</div>
+{% endblock %}

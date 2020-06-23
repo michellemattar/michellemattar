@@ -1,0 +1,10 @@
+{% macro tableRow(label, list) %}
+  <div class="table-row">
+    <h3 class="table-row-label">{{ label }}</h3>
+    <ul class="table-row-list">
+      {% for item in list %}
+        <li class="table-row-list-item">{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endmacro %}

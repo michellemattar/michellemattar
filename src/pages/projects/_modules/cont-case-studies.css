@@ -1,0 +1,63 @@
+.cont-case-studies {
+  max-width: 900px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.ccs-inner {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 50px;
+}
+
+.ccs-case {
+  display: block;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+}
+
+.ccs-image-wrapper {
+  overflow: hidden;
+}
+
+.ccs-image {
+  width: 100%;
+  transition: transform 250ms;
+}
+
+.ccs-case:hover .ccs-image,
+.ccs-case:hover .ccs-image {
+  transform: scale(1.1);
+}
+
+.ccs-logo-wrapper {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ccs-logo {
+  max-height: 20px;
+  max-width: 200px;
+}
+
+@media (min-width: 480px) {
+  .ccs-inner {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ccs-case {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (min-width: 768px) {
+  .ccs-case {
+    width: calc(33.33% - 10px);
+    margin-bottom: 50px;
+  }
+}

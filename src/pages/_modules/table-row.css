@@ -1,0 +1,38 @@
+.table-row {
+  display: flex;
+  padding: 24px 0;
+}
+
+.table-row:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.table-row:nth-child(4n + 1) .table-row-label {
+  color: var(--green);
+}
+
+.table-row:nth-child(4n + 2) .table-row-label {
+  color: var(--blue);
+}
+
+.table-row:nth-child(4n + 3) .table-row-label {
+  color: var(--red);
+}
+
+.table-row:nth-child(4n + 4) .table-row-label {
+  color: var(--pink);
+}
+
+.table-row-label {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.table-row-list {
+  flex: 1;
+  padding-left: 50px;
+  list-style: none;
+  margin: 0;
+  line-height: 24px;
+}

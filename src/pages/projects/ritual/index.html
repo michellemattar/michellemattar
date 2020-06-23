@@ -1,0 +1,414 @@
+{% extends "pages/projects/_modules/project.html" %}
+
+{% set pageTitle = 'Ritual' %}
+
+{% from "pages/projects/_modules/project-features.html" import feature %}
+{% import "pages/projects/_modules/showcase.html" as showcase %}
+{% from "pages/projects/_modules/press-links.html" import pressLinks %}
+{% from "pages/_modules/table-row.html" import tableRow %}
+
+{% block projectSummary %}
+  <h2 class="heading">Ritual is</h2>
+  <p class="text">
+    A new kind of health technology company that’s reinventing the products that women use every single day. Their debut product—an essential daily vitamin—boasts completely traceable and transparent ingredients so you know exactly what you’re swallowing.
+  </p>
+  <h2 class="heading">My Role</h2>
+  <p class="text">
+    I first met founder Kat Schneider while I was a consultant in New York. She was looking for soup-to-nuts creative vision and execution for the brand identity, website, packaging and art direction. There was much to do so I brought on a creative partner, Jess Yan, to help build out Ritual's launch. As Ritual grew, I joined in as Creative Director in Los Angeles and led all creative fronts to help scale the company and fortify the brand and customer journey. I’m continuing to build Ritual today as  consultant on high-level initiatives and campaigns.
+  </p>
+{% endblock %}
+
+{% block projectFeatures %}
+  {{ tableRow('Fundraising',
+    [
+      'Seed',
+      'Series A'
+    ])
+  }}
+  {{ tableRow('Branding',
+    [
+      'Brand Identity',
+      'Tone of Voice',
+      'Art Direction',
+      'Launch Strategy',
+      'Packaging',
+      'Illustration'
+    ])
+  }}
+  {{ tableRow('Digital Product',
+    [
+      'Content Strategy',
+      'Web Design',
+      'User Testing',
+      'Marketing Emails'
+    ])
+  }}
+  {{ tableRow('Activation',
+    [
+      'Interiors',
+      'Social Strategy',
+      'Event Design',
+      'Advertising',
+      'Campaigns'
+    ])
+  }}
+{% endblock %}
+
+{% block showcase %}
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-01.jpg'
+      },
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-02.jpg'
+      }
+    ])
+  }}
+
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/home/logos/ritual-logo.svg'
+    }], {
+      contained: true,
+      extraContainerPadding: true
+    })
+  }}
+
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-03.jpg'
+    }])
+  }}
+
+  {{
+    showcase.textBlock('Color Palette',
+      'Ritual shares every source and dosage that made their visionary vitamin a reality.'
+    )
+  }}
+
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-04.jpg'
+    }], {
+      contained: true,
+      noContainerPadding: true
+    })
+  }}
+
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-05.jpg'
+    }], {
+      contained: true
+    })
+  }}
+
+  {{
+    showcase.textByImages({
+      label: 'Iconography',
+      text: 'The iconography system is rooted in strong, geometric forms. It’s always reduced to the simpest way to communicate the subject matter possible.'
+    }, [{
+      src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-06.jpg'
+    }])
+  }}
+
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-07.jpg'
+    }])
+  }}
+
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-web-1.jpg'
+      }],
+      {contained: true
+      })
+  }}
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-web-2.jpg'
+      }],
+      {contained: true
+      })
+  }}
+    
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-web-3a.jpg'
+      }
+    ])
+  }}
+  
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-web-3.jpg'
+      }
+    ])
+  }}
+
+  
+    {{
+    showcase.textBlock('ingredients',
+      'Ritual shares every source and dosage that made their visionary vitamin a reality.'
+    )
+  }}
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-08.jpg'
+      },
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-09.jpg'
+      },
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-10.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-11.jpg'
+      },
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-12.jpg'
+      },
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-13.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-14.jpg'
+      },
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-15.jpg'
+      },
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-16.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-17.jpg'
+      },
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-18.jpg'
+      }
+    ], {
+      contained: true
+    })
+  }}
+  
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-web-4.jpg'
+      }
+    ])
+  }}
+  
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-19.gif'
+      }
+    ])
+  }}
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-20.jpg'
+      }
+    ])
+  }}
+
+  {{
+    showcase.textBlock('Ingredient Emails',
+      'Ritual is a company that requires the creative team and science team to sit in rooms for countless hours, trying to break down ways to make big ideas a little less intimidating. These emails were often a few pages of notes and sketches before ever opening up a creative program. Here’s a few I wrapped my mind around:'
+    )
+  }}
+
+  {{
+    showcase.imageSlider([
+      {
+        thumbnail: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-21.jpg',
+        full: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-21.jpg'
+      },
+      {
+        thumbnail: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-22.jpg',
+        full: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-22.jpg'
+      },
+      {
+        thumbnail: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-23.jpg',
+        full: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-23.jpg'
+      },
+      {
+        thumbnail: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-postpurchase-3.jpg',
+        full: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-postpurchase-3.jpg'
+      }
+    ])
+  }}
+  
+  
+        {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/michelle-mattar-ritual-ingredientlimerick.jpg'
+      }
+    ])
+  }}
+  
+
+        {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/michelle-mattar-ritual-ingredientlimerick-2.jpg'
+      }
+    ])
+  }}
+  
+        {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/michelle-mattar-ritual-values.jpg'
+      }
+    ])
+  }}
+  
+            {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-packaging-1.jpg'
+      }
+    ])
+  }}
+  
+        {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-packaging-2.jpg'
+      },
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-packaging-3.jpg'
+      }
+    ])
+  }}
+  
+          {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-package-box.jpg'
+      }
+    ])
+  }}
+  
+    {{
+    showcase.textByImages({
+      label: 'Month One Box',
+      text: 'The iconography system is rooted in strong, geometric forms. It’s always reduced to the simpest way to communicate the subject matter possible.'
+    }, [{
+      src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-package-month1.jpg'
+    },
+    {
+      src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-package-month1-detail.jpg'
+    }
+    ])
+  }}
+      {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/michelle-mattar-ritual-calendar.gif'
+      }],
+      {contained: true
+      })
+  }}
+  
+          {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-sweatshirt.jpg'
+      },
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-sweatshirt2.jpg'
+      }
+    ],{
+    imageSpacing:true
+    })
+  }}
+  
+  <br>
+      {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/ritual/ritual-vitamins-michellemattar-print-all.jpg'
+      }
+    ])
+  }}
+
+
+  {{ showcase.video([
+    {
+      src: '/assets/videos/projects/ritual/ritual-just-add-water-video.mp4',
+      type: 'mp4'
+    },
+    {
+      src: '/assets/videos/projects/ritual/ritual-just-add-water-video.webm',
+      type: 'webm'
+    },
+    {
+      src: '/assets/videos/projects/ritual/ritual-just-add-water-video.ogv',
+      type: 'ogg'
+    }
+  ]) }}
+{% endblock %}
+
+{% block pressLinks %}
+  {{ pressLinks([
+    {
+      source: 'Business Insider',
+      label: '21 Hottest Woman-Founded Startups to Watch in 2017',
+      href: 'http://www.businessinsider.com/top-female-founded-startups-to-watch-2017-1'
+    },
+    {
+      source: 'Well & Good',
+      label: 'The Buzzy Multivitamin Everyone is Talking About',
+      href: 'https://www.wellandgood.com/good-advice/non-gmo-vegan-vitamins-supplements-ritual/'
+    },
+    {
+      source: 'Brit + Co',
+      label: 'Are Cool Girl Vitamins a Thing? They Are Now Thanks to This New Brand',
+      href: 'https://www.brit.co/ritual-vitamin/'
+    },
+    {
+      source: 'Forbes',
+      label: "Instagram-Friendly Women's Vitamin Startup Ritual Raises $10.5M Series A",
+      href: 'https://www.forbes.com/sites/clareoconnor/2017/08/01/instagram-friendly-womens-vitamin-startup-ritual-raises-10-5m-series-a/#5d7aa2972391'
+    }
+  ]) }}
+{% endblock %}

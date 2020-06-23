@@ -1,0 +1,108 @@
+{##
+ # One row of images.
+ #
+ # imageList [{ src: '', alt: '' }]
+ # options { imageSpacing: false, contained: false, noContainerPadding: false,
+ # extraContainerPadding: false }
+ #}
+{% macro imageRow(imageList, options) %}
+
+  {% if options.contained and options.noContainerPadding %}
+    {% set containerClasses = 'page-width no-container-padding' %}
+  {% elif options.contained and options.extraContainerPadding %}
+    {% set containerClasses = 'page-width extra-container-padding' %}
+  {% elif options.contained %}
+    {% set containerClasses = 'page-width' %}
+  {% else %}
+    {% set containerClasses = '' %}
+  {% endif %}
+
+  {% if options.imageSpacing %}
+    {% set spacingClass = 'image-spacing' %}
+  {% else %}
+    {% set spacingClass = '' %}
+  {% endif %}
+
+  <div class="image-row flex-it {{containerClasses}}{{spacingClass}}">
+    {% for image in imageList %}
+      <div class="image-wrapper">
+        <img src="{{image.src}}" alt="{{image.alt}}" />
+      </div>
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{##
+ # One block of text, with a heading label
+ # a paragraph.
+ #
+ # label ''
+ # text ''
+ # options { noContainerPadding: false }
+ #}
+{% macro textBlock(label, text, options) %}
+  <div class="text-block page-width {% if options.noContainerPadding %}no-container-padding{% endif %}">
+    <div class="text-block-inner">
+      {% if label %}<h3 class="heading">{{ label }}</h3>{% endif %}
+      <p class="text">{{ text }}</p>
+    </div>
+  </div>
+{% endmacro %}
+
+{##
+ # A text block next to a column of images.
+ #
+ # text: ''
+ # imageList [{ src: '', alt: '' }]
+ #}
+{% macro textByImages(text, imageList) %}
+  <div class="text-by-image flex-it page-width">
+    <div class="block-40">
+      {% if text.label %}<h3 class="heading">{{ text.label }}</h3>{% endif %}
+      <p class="text">{{ text.text }}</p>
+    </div>
+    <div class="block-60 image-wrapper">
+      {% for image in imageList %}
+        <img src="{{image.src}}" alt="{{image.alt}}" />
+      {% endfor %}
+    </div>
+  </div>
+{% endmacro %}
+
+{##
+ # Image slider
+ #
+ # Click on a thumbnail opens modal in
+ # slider-modal.html
+ #
+ # imageList [{ src: '', alt: '' }]
+ #}
+{% macro imageSlider(imageList) %}
+  <div class="slider page-width">
+    {% for image in imageList %}
+      <a href="{{image.full}}" title="Click to zoom" class="slider-item">
+        <div class="slider-item-inner">
+          <div class="slider-caption"><img src="/assets/images/zoom.svg" class="slider-zoom-icon" />Click to Zoom</div>
+          <img src="{{image.thumbnail}}" class="slider-thumbnail" />
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{##
+ # Looped, muted, autoplayed video
+ #
+ # A compact replacement for a gif.
+ #
+ # videoSources: [{ src: '', type: 'mp4' | 'webm' | 'ogg' }]
+ #}
+{% macro video(videoSources) %}
+  <div class="video page-width">
+    <video width="100%" autoplay loop muted>
+      {% for source in videoSources %}
+        <source src="{{ source.src }}" type="video/{{ source.type }}">
+      {% endfor %}
+    </video>
+  </div>
+{% endmacro %}

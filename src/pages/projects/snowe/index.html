@@ -1,0 +1,376 @@
+{% extends "pages/projects/_modules/project.html" %}
+
+{% set pageTitle = 'Snowe' %}
+
+{% from "pages/projects/_modules/project-features.html" import feature %}
+{% import "pages/projects/_modules/showcase.html" as showcase %}
+{% from "pages/projects/_modules/press-links.html" import pressLinks %}
+{% from "pages/_modules/table-row.html" import tableRow %}
+
+{% block projectSummary %}
+  <h2 class="heading">Snowe is</h2>
+  <p class="text">
+A direct-to-consumer line of home decor essentials which cuts out the middleman for savings, but doesn't skimp on quality. The brand's debut line, called The Foundation Collection, is filled with thoughtfully-designed, unfussy essentials organized by end use (Eat, Drink, Sleep, Bathe) and made of the highest quality materials like limoges porcelain, egyptian cotton and italian glassware.
+  </p>
+  <h2 class="heading">My Role</h2>
+  <p class="text">
+While at Red Antler, I worked on Snowe's brand with the Creative Direction of Simon Endres and alongside designer Daniel Renda. I proceeded to art direct a full-scale photoshoot with photographer Marcus Nilsson and then worked to transition the brand vision to web alongside digital designer Sam Faulkner. I have continued to collaborate with Snowe on-going as they scale the business and expanded The Foundation Collection, particularly focusing on helping them to position, launch, and market new SKU’s.
+  </p>
+{% endblock %}
+
+{% block projectFeatures %}
+  {{ tableRow('Branding',
+    [
+      'Brand Identity',
+      'Art Direction',
+      'Launch Materials',
+      'Packaging',
+      'Illustration'
+    ])
+  }}
+  {{ tableRow('Digital Product',
+    [
+      'Content Strategy',
+      'Web Design',
+      'Marketing Emails'
+    ])
+  }}
+  {{ tableRow('Activation',
+    [
+      'Social Strategy',
+      'Advertising',
+      'Makerting Materials',
+      'Campaigns'
+    ])
+  }}
+{% endblock %}
+
+{% block showcase %}
+  
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-plate.gif'
+      },
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-crosscategory.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/home/logos/snowe-logo.svg'
+    }], {
+      contained: true,
+      extraContainerPadding: true
+    })
+  }}
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-3.jpg'
+      },
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-3b.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+
+  
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-1.jpg'
+      },
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-3a.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-web-1.jpg'
+      }
+    ], {
+        extraContainerPadding: true
+
+    })
+  }}
+  
+    {{
+    showcase.textBlock('Hover States',
+      'I conceptualized and Art Directed hover states for ecommerce product images that demonstrate scale, use and personality.'
+    ,
+    {
+          noContainerPadding: true
+})
+  }}
+
+  
+  {{ showcase.video([
+    {
+      src: '/assets/videos/projects/snowe/snowe-hovers.mp4',
+      type: 'mp4'
+    },
+      {
+      src: '/assets/videos/projects/snowe/snowehovers.webm',
+      type: 'webm'
+    },
+      {
+      src: '/assets/videos/projects/snowe/snowehovers.ogg',
+      type: 'ogg'
+    }
+  ]) }}
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-product-contours.jpg'
+      }
+    ], {
+      noContainerPadding: true
+    })
+  }}
+    
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-packaging.gif'
+      }
+    ], {
+      contained: false
+    })
+  }}
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-packaging-card.jpg'
+      }
+    ], {
+      contained: true
+    })
+  }}
+  
+     {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-brunch.jpg'
+      }
+    ])
+  }}
+  
+  <br>  <br>  <br>
+  {{
+    showcase.textBlock('AFTER THE BRAND LAUNCH –',
+      ''
+    )
+  }}
+  
+    {{
+    showcase.textBlock('JOINING AS A PART TIME ART DIRECTOR',
+      'About 5 months after launch, Snowe was ready to launch new products. They needed help creating compelling marketing for each new product and wanted a strong point of view from the brand. I was freelance at the time and helped them individually launch each product, leading art direction on creative photo, design and storytelling.'
+    )
+  }}
+
+  
+      {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-a.jpg'
+      },
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-b.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+  
+        {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-d.jpg'
+      },
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-c.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+  
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-beach-towel.gif'
+      }],{
+      contained: true
+      })
+  }}
+   
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-cheeseboard-1.gif'
+      },
+            {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-duvet-1.gif'
+      },
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-beachtowel-1.gif'
+      }],{
+      imageSpacing: true
+      })
+  }}
+  
+  {{
+    showcase.imageSlider([
+      {
+        thumbnail: '/assets/images/projects/snowe/michelle-mattar-snowe-email-1.jpg',
+        full: '/assets/images/projects/snowe/michelle-mattar-snowe-email-1.jpg'
+      },
+      {
+        thumbnail: '/assets/images/projects/snowe/michelle-mattar-snowe-email-4.gif',
+        full: '/assets/images/projects/snowe/michelle-mattar-snowe-email-4.gif'
+      },
+      {
+        thumbnail: '/assets/images/projects/snowe/michelle-mattar-snowe-email-5.gif',
+        full: '/assets/images/projects/snowe/michelle-mattar-snowe-email-5.gif'
+      }
+    ],{
+    noContainerPadding: true})
+  }}
+       
+  
+     {{
+    showcase.textByImages({
+      label: 'CLEAN',
+      text: "A well-designed home is a feeling, too. Clean is Snowe's new vertical to add to Eat, Drink, Sleep and Bathe that helps set the tone and tie together the space. I designed new candles and a diffuser set that used the same form factor as their water carafe, in a powder-coated mini form."
+    }, [{
+      src: '/assets/images/projects/snowe/snowe-michellemattar-candles-spin.gif'
+    }
+    ])
+  }}
+    
+     {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/snowe-michellemattar-candles.jpg'
+      }])
+  }}
+  
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/snowe-michellemattar-candles-1.jpg'
+      },
+      {
+        src: '/assets/images/projects/snowe/snowe-michellemattar-candles-1a.jpg'
+      }])
+  }}
+  
+      
+      {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-web-2.gif'
+      },
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-web-1.png'
+      }
+    ], {
+      contained: true
+    })
+  }}
+  
+          {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michellemattar-snowe-popup-1.jpg'
+      },
+      {
+        src: '/assets/images/projects/snowe/michellemattar-snowe-popup-2.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-advertising-gather.jpg'
+      }
+    ],{
+    contained: true
+    })
+  }}
+  
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-collateral-5.jpg'
+      },
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-collateral-5a.jpg'
+      }
+    ], {
+      imageSpacing: true
+    })
+  }}
+      
+  
+      <br><br>
+    
+
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/snowe/michelle-mattar-snowe-unboxing.gif'
+      }
+    ], {
+      contained: True
+    })
+  }}
+  
+
+
+      
+{% endblock %}
+
+{% block pressLinks %}
+  {{ pressLinks([
+    {
+      source: 'Architectural Digest',
+      label: 'This Site May Be Your New Favorite for Home Essentials',
+      href: 'https://www.architecturaldigest.com/story/home-essentials-snowe'
+    },
+    {
+      source: 'Racked',
+      label: 'Snowe Is Here to Rescue You From Ikea',
+      href: 'https://www.racked.com/2015/6/18/8800443/snowe-home#0'
+    },
+    {
+      source: 'Lonny',
+      label: 'The Home Decor Brand that Will Change the Way You Think About Basics',
+      href: 'http://www.lonny.com/The+Find/articles/yBUZgrokUmd/Home+Decor+Brand+Will+Change+Way+Think+Basics'
+    },
+    {
+      source: 'InStyle',
+      label: 'This Online Home Goods Store Could Be the Next Ikea',
+      href: 'http://www.instyle.com/news/snowe-home-goods-affordable-furniture'
+    }
+  ]) }}
+{% endblock %}

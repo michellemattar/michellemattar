@@ -1,0 +1,59 @@
+@import 'assets/fonts/univers_next_extended/univers';
+@import 'assets/fonts/suisse_intl/suisse.css';
+
+:root {
+  --green: #0f8555;
+  --blue: #264a8c;
+  --pink: #f8916a;
+  --red: #d83429;
+
+  --z-index1: 100;
+  --z-index2: 200;
+  --z-index3: 300;
+
+  --header-height: 72px;
+
+  --font-body: 'SuisseIntl-Book-S';
+  --font-heading: 'UniversNextPro-Ext';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+[data-whatintent='keyboard'] *:focus {
+  outline: 5px solid var(--blue);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-body);
+}
+
+.lock-scrolling .main-content {
+  max-height: calc(100vh - var(--header-height));
+  overflow: hidden;
+}
+
+.page-container {
+  max-width: 960px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+@media (min-width: 768px) {
+  .page-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

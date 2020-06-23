@@ -1,0 +1,13 @@
+{% macro typedText(text) %}
+  {% set color = cycler("green", "blue", "red", "pink") %}
+  <span class="typed-text-wrapper">
+  {% for char in text %}<span
+    {% if char != ' ' %}
+      class="typed-text {{ color.next() }}"
+      style="animation-delay: {{ 95 * loop.index0 }}ms"
+    {% endif %}
+    >{{
+      char
+    }}</span>{% endfor %}
+  </span>
+{% endmacro %}

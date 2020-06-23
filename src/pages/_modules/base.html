@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  {# remove for launch #}
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="stylesheet" href="/index.css" />
+
+  {% block css %}{% endblock %}
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119331416-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-119331416-1');
+</script>
+
+
+  {% if pageTitle %}
+    <title>{{ pageTitle }} | Michelle Mattar</title>
+  {% else %}
+    <title>Michelle Mattar</title>
+  {% endif %}
+  <meta name="description" content="Michelle Mattar is a Creative Director, designer, storyteller and idea person building brands in New York and Los Angeles.">
+  <meta name="keywords" content="graphic design, branding, consulting, creative director, freelance, start ups, ritual, ritual vitamins, websites, packaging, strategy, design, art direction, designer, snowe, her, her app, red antler">
+  
+    <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Michelle Mattar">
+  <meta name="twitter:description" content="Michelle Mattar is a Creative Director, designer, storyteller and idea person building brands in New York and Los Angeles.">
+	<meta name="twitter:image" content="http://v2.michellemattar.com/assets/images/home/facebookmetaimage.jpg">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Michelle Mattar" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://www.michellemattar.com/" />
+	<meta property="og:image" content="http://v2.michellemattar.com/assets/images/home/facebookmetaimage.jpg" />
+	<meta property="og:description" content="Michelle Mattar is a Creative Director, designer, storyteller and idea person building brands in New York and Los Angeles." /> 
+	<meta property="og:site_name" content="Michelle Mattar" />
+
+</head>
+
+<body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
+  {% include "./header.html" %}
+
+  <main class="main-content">
+    {% block body %}{% endblock %}
+  </main>
+
+  {% include "pages/projects/_modules/slider-modal.html" %}
+
+  <script src="/index.js"></script>
+
+  {% block js %}{% endblock %}
+</body>
+</html>

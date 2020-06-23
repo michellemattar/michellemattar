@@ -1,0 +1,73 @@
+{# see data structure in project-links.json #}
+
+{##
+ # Template for an individual cell,
+ # used by the row templates below.
+ #}
+{% macro cell(case, trimDesktopImage) %}
+  <a href="{{case.href}}" class="hgr-link">
+    <div class="hgr-cell-mobile">
+      <img src="{{case.mobileImage}}" class="hgr-mobile-image" />
+      <div class="hgr-logo-wrapper">
+        <img src="{{case.logoImage}}" class="hgr-logo-image" alt="{{case.name}}" />
+        <img src="assets/images/black_arrow.svg" class="hgr-arrow" />
+      </div>
+    </div>
+    <div class="hgr-cell-desktop">
+    {% if trimDesktopImage %}
+      <img src="{{case.desktopImage}}" class="hgr-desktop-image trim" />
+    {% else %}
+      <img src="{{case.desktopImage}}" class="hgr-desktop-image" />
+    {% endif %}
+      <div class="hgr-cell-info">
+        <div class="hgr-cell-info-inner">
+          <div class="hgr-cell-title-image">
+            <h2 class="hgr-cell-title">
+              {{ case.title }}
+            </h2>
+            <div class="hgr-cell-image-wrapper">
+              <img src="{{case.desktopImage}}" class="hgr-cell-image" />
+            </div>
+          </div>
+          <div class="hgr-logo-wrapper">
+            <img src="{{case.logoImage}}" class="hgr-logo-image" alt="{{case.name}}" />
+            <img src="assets/images/black_arrow.svg" class="hgr-arrow" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+{% endmacro %}
+
+{##
+ # Template for a row:
+ # Small cell, Large cell
+ #}
+{% macro rowA(first, second) %}
+  <div class="home-grid-row">
+    <div class="hgr-cell-single">
+      {{ cell(first, true) }}
+    </div>
+    <div class="hgr-cell-double">
+      {{ cell(second) }}
+    </div>
+  </div>
+{% endmacro %}
+
+{##
+ # Template for a row:
+ # Large cell, Small cell
+ #
+ # This is the reverse of
+ # the above row.
+ #}
+{% macro rowB(first, second) %}
+  <div class="home-grid-row">
+    <div class="hgr-cell-double">
+      {{ cell(first) }}
+    </div>
+    <div class="hgr-cell-single">
+      {{ cell(second, true) }}
+    </div>
+  </div>
+{% endmacro %}

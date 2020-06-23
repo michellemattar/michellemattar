@@ -1,0 +1,206 @@
+{% extends "pages/projects/_modules/project.html" %}
+
+{% set pageTitle = 'Rockets of Awesome' %}
+
+{% from "pages/projects/_modules/project-features.html" import feature %}
+{% import "pages/projects/_modules/showcase.html" as showcase %}
+{% from "pages/projects/_modules/press-links.html" import pressLinks %}
+{% from "pages/_modules/table-row.html" import tableRow %}
+
+{% block projectSummary %}
+  <h2 class="heading">Rockets of Awesome is</h2>
+  <p class="text">
+    The new way to shop for kids. Cool clothes, hand-picked just for your kid, delivered straight to your door once a season, with zero risk and tons of rainbow sprinkles. 
+  </p>
+  <h2 class="heading">My Role</h2>
+  <p class="text">
+    I was hired by CCO Theresa Canning-Zast to help build the brand and bridge the gap to digital. With a trifecta of creative between UX power-duo Everyday Industries, Art Director Meghan Eplett and myself, we channeled emotional and technical concepts into a brand with distinct spirit, powered by awesomeness. Photography by Nick Steever and Amanda Pratt.
+  </p>
+{% endblock %}
+
+{% block projectFeatures %}
+   {{ tableRow('Branding',
+    [
+      'Brand Identity',
+      'Visual Design'
+    ])
+  }}
+  {{ tableRow('Digital Product',
+    [
+      'Web Design',
+      'User Testing',
+      'Digital Art Direction'
+    ])
+  }}{% endblock %}
+
+{% block showcase %}
+  {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-20.jpg'
+      }
+    ])
+  }}
+  
+    {{
+    showcase.textBlock('The Process',
+      'Kids have a wonderfully unpredictive energy that makes them rockets of awesome. Through an iterative and inspired process, we worked towards capturing that in a brand that simplifies mom’s life.'
+    )
+  }}
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-2a.jpg'
+      },
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-2b.jpg'
+      }
+    ], {
+      contained: true,
+      noContainerPadding: true
+    })
+  }}
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-4.jpg'
+      }
+    ], {
+    contained: true,
+    imageSpacing: false
+    })
+  }}
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-3.jpg'
+      }
+    ])
+  }}
+  
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-7.jpg'
+      },
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-8.gif'
+      }
+    ], {
+      contained: true,
+      imageSpacing: true,
+      noContainerPadding: true
+    })
+  }}
+
+  
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-9.gif'
+      },
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-14.gif'
+      }
+    ], {
+      contained: true,
+      noContainerPadding: true
+    })
+  }}
+
+  {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-15.jpg'
+    }], {
+      contained: false
+    })
+  }}
+
+    {{
+    showcase.textBlock('The Quiz',
+      'We developed a series of easy, breezy questions to help Mom to tell us what her child likes and doesn’t like. Then I spent time crafting those questions into a web experience that was a celebration of real kid energy, spontaneous fashion fun, and imagination.'
+    )
+  }}
+  
+    {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-16.jpg'
+    }], {
+      contained: false
+    })
+  }}
+  
+    {{
+    showcase.imageRow([{
+      src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-17.jpg'
+    }], {
+      contained: false
+    })
+  }}
+  
+    {{
+    showcase.textBlock('Style Guide',
+      'Inspired by the wonder of science and expressive creatives like Lawrence Weiner, we briefly captured the work we were implementing before launch in a short-but-sweet style guide.'
+    )
+  }}
+  
+    
+    {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-styleguide-1.jpg'
+      },
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-styleguide-2.jpg'
+      }
+    ], {
+      noContainerPadding: true
+    })
+  }}
+  
+     {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-styleguide-3.jpg'
+      },
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-styleguide-4.jpg'
+      }
+    ], {
+      noContainerPadding: true
+    })
+  }}
+  
+       {{
+    showcase.imageRow([
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-12a.jpg'
+      },
+      {
+        src: '/assets/images/projects/rockets/michelle-mattar-rockets-of-awesome-12b.jpg'
+      }
+    ], {
+      noContainerPadding: true
+    })
+  }}
+  
+{% endblock %}
+
+{% block pressLinks %}
+  {{ pressLinks([
+    {
+      source: 'Fast Company',
+      label: 'Rockets Of Awesome’s New Subscription Service Keeps Up With Your Growing Kids
+',
+      href: 'https://www.fastcompany.com/3062121/rockets-of-awesomes-new-subscription-service-keeps-up-with-your-growing-kids'
+    },
+    {
+      source: 'TechCrunch',
+      label: 'Rockets of Awesome makes shopping for kids’ clothes easier with home try-on and a personalized site',
+      href: 'https://techcrunch.com/2016/07/26/rockets-of-awesome-makes-shopping-for-kids-clothes-easier-with-home-try-on-and-a-personalized-site/'
+    }  ]) }}
+{% endblock %}

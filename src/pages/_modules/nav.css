@@ -1,0 +1,102 @@
+.main-nav {
+  position: fixed;
+  background: white;
+  top: var(--header-height);
+  width: 100%;
+  display: none;
+  transform: translateX(-100%);
+  padding: 30px;
+  box-sizing: border-box;
+  transition: transform 350ms ease-in-out;
+  z-index: var(--z-index1);
+  overflow: auto;
+}
+
+.nav-open .main-nav {
+  display: block;
+  height: calc(100vh - 56px);
+}
+
+.nav-visible .main-nav {
+  transform: translate(0);
+}
+
+.main-content {
+  transition: opacity 500ms ease-in-out;
+}
+
+.nav-open .main-content {
+  opacity: 0;
+}
+
+.nav-visible {
+  overflow: hidden;
+}
+
+.mn-link {
+  font-size: 28px;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  transition: 150ms ease-in-out;
+}
+
+.mn-link:not(:first-child) {
+  padding-top: 20px;
+}
+
+.mn-link-icon {
+  width: 20px;
+  transition: 150ms ease-in-out;
+}
+
+.mn-link:hover .mn-link-icon,
+.mn-link:focus .mn-link-icon {
+  transform: rotate(45deg);
+}
+
+.mn-link.blue:hover,
+.mn-link.blue:focus {
+  color: var(--blue);
+}
+
+.mn-link.red:hover,
+.mn-link.red:focus {
+  color: var(--red);
+}
+
+.mn-link.green:hover,
+.mn-link.green:focus {
+  color: var(--green);
+}
+
+.mn-link.pink:hover,
+.mn-link.pink:focus {
+  color: var(--pink);
+}
+
+@media (min-width: 468px) {
+  .main-nav {
+    padding: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mn-link {
+    font-size: 70px;
+    padding-bottom: 50px;
+  }
+
+  .mn-link:not(:first-child) {
+    padding-top: 50px;
+  }
+
+  .mn-link-icon {
+    width: 40px;
+  }
+}

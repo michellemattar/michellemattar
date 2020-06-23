@@ -1,0 +1,35 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  1%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.typed-text:not(:first-child) {
+  opacity: 0;
+}
+
+.animate .typed-text:not(:first-child) {
+  animation-name: appear;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+
+.typed-text.green {
+  color: var(--green);
+}
+
+.typed-text.blue {
+  color: var(--blue);
+}
+
+.typed-text.red {
+  color: var(--red);
+}
+
+.typed-text.pink {
+  color: var(--pink);
+}

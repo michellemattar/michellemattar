@@ -1,0 +1,54 @@
+.afsl-link-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.afsl-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.afsl-link-list-item {
+  flex-basis: 45%;
+}
+
+.afsl-link-list-item a {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding: 10px 0 5px;
+  width: 100%;
+}
+
+.afsl-link-list-item.green a {
+  color: var(--green);
+}
+
+.afsl-link-list-item.blue a {
+  color: var(--blue);
+}
+
+.afsl-link-list-item.red a {
+  color: var(--red);
+}
+
+.afsl-link-list-item.pink a {
+  color: var(--pink);
+}
+
+@media (min-width: 480px) {
+  .afsl-link-list {
+    flex-direction: column;
+  }
+
+  .afsl-link-list-item {
+    flex-basis: auto;
+  }
+
+  .afsl-link-list-item a {
+    width: auto;
+    border-bottom: 0;
+    padding-top: 0;
+  }
+}

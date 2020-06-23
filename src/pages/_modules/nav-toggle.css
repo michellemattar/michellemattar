@@ -1,0 +1,62 @@
+/**
+ * Nav Toggle
+ */
+.mh-nav-toggle {
+  border: 0;
+  appearance: none;
+  cursor: pointer;
+  padding: 10px 15px 10px;
+  background: transparent;
+}
+
+.mh-nav-toggle-inner {
+  width: 12px;
+  height: 11px;
+  position: relative;
+}
+
+.toggle-bar {
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid black;
+  left: 0;
+  transform-origin: left center;
+  transition: 150ms ease-in-out;
+}
+
+.toggle-bar.top {
+  top: 0;
+}
+
+.toggle-bar.middle {
+  top: 5px;
+  width: 66%;
+}
+
+.toggle-bar.bottom {
+  bottom: 0;
+}
+
+.nav-visible .toggle-bar.top,
+.nav-visible .mh-nav-toggle:hover .toggle-bar.top {
+  width: 14px;
+  transform: rotate(45deg) translateY(0);
+}
+
+.nav-visible .toggle-bar.middle {
+  opacity: 0;
+}
+
+.nav-visible .toggle-bar.bottom,
+.nav-visible .mh-nav-toggle:hover .toggle-bar.bottom {
+  width: 14px;
+  transform: rotate(-45deg) translateY(0);
+}
+
+.mh-nav-toggle:hover .toggle-bar.top {
+  transform: translateY(-2px);
+}
+
+.mh-nav-toggle:hover .toggle-bar.bottom {
+  transform: translateY(2px);
+}

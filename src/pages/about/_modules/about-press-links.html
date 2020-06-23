@@ -1,0 +1,13 @@
+{% macro aboutPressLinks(linkList) %}
+  {% set color = cycler("green", "blue", "red", "pink") %}
+  <ul class="afpl-link-list">
+  {% for link in linkList %}
+    <li class="afpl-link-list-item {{ color.next() }}" >
+      <a href="{{ link.href }}" rel="noopener">
+        {{ link.label }}
+        <img src="/assets/images/{{ color.current }}_arrow.svg" class="afpl-link-list-icon">
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+{% endmacro %}

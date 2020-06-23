@@ -1,0 +1,33 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3517061, 2018-01-27T01:01:43-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: UniversNextPro-Ext by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/univers-next/pro-440-extended-regular/
+ * Copyright: Copyright &#x00A9; 2010 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH. Univers is a trademark of Linotype Corp. regi
+ * Licensed pageviews: 250,000
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3517061
+ *
+ * © 2018 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+/* @import url("/count/35aa85"); */
+
+@font-face {
+  font-family: 'UniversNextPro-Ext';
+  src: url('assets/fonts/univers_next_extended/webfonts/35AA85_0_0.eot');
+  src: url('assets/fonts/univers_next_extended/webfonts/35AA85_0_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('assets/fonts/univers_next_extended/webfonts/35AA85_0_0.woff2') format('woff2'),
+    url('assets/fonts/univers_next_extended/webfonts/35AA85_0_0.woff') format('woff'),
+    url('assets/fonts/univers_next_extended/webfonts/35AA85_0_0.ttf') format('truetype');
+}

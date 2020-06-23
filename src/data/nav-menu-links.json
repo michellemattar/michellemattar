@@ -1,0 +1,19 @@
+{
+  "navMenuLinks": [
+    {
+      "label": "Case Studies",
+      "href": "/",
+      "color": "green"
+    },
+    {
+      "label": "About",
+      "href": "/about",
+      "color": "blue"
+    },
+    {
+      "label": "Play",
+      "href": "/play",
+      "color": "pink"
+    }
+  ]
+}

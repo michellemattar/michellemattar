@@ -1,0 +1,44 @@
+.afpl-link-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.afpl-link-list-item a {
+  padding: 12px 0;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 150ms;
+}
+
+.afpl-link-list-item:not(:first-child) {
+  border-top: 1px solid black;
+}
+
+.afpl-link-list-icon {
+  width: 17px;
+  margin-left: 24px;
+  transition: 150ms ease-in-out;
+}
+
+a:hover .afpl-link-list-icon {
+  transform: rotate(45deg);
+}
+
+.afpl-link-list-item.green:hover a {
+  color: var(--green);
+}
+
+.afpl-link-list-item.blue:hover a {
+  color: var(--blue);
+}
+
+.afpl-link-list-item.red:hover a {
+  color: var(--red);
+}
+
+.afpl-link-list-item.pink:hover a {
+  color: var(--pink);
+}

@@ -1,0 +1,10 @@
+{% macro feature(featureLabel, featureList) %}
+  <div class="project-feature">
+    <h3 class="project-feature-label">{{ featureLabel }}</h3>
+    <ul class="project-feature-list">
+      {% for item in featureList %}
+        <li class="project-feature-list-item">{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endmacro %}

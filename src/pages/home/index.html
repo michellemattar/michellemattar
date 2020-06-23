@@ -1,0 +1,22 @@
+{% extends "pages/_modules/base.html" %}
+
+{% import "pages/home/_modules/home-grid.html" as homeGrid %}
+
+{# Used to hide the header in "pages/_modules/header.html" #}
+{% set hideHeader = true %}
+
+{# Disables scrolling for intro animation #}
+{% set bodyClass = 'lock-scrolling' %}
+
+{% block body %}
+  {% include "pages/home/_modules/intro.html" %}
+  <div class="home-grid">
+    {{ homeGrid.rowA(projectLinks.her, projectLinks.ritual) }}
+    {{ homeGrid.rowB(projectLinks.snowe, projectLinks.rockets) }}
+    {{ homeGrid.rowA(projectLinks.resolutionstorituals, projectLinks.thewhitespace) }}
+  </div>
+{% endblock %}
+
+{% block js %}
+  <script src="/home/index.js"></script>
+{% endblock %}

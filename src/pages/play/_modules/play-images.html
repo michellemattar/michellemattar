@@ -1,0 +1,17 @@
+{% macro playImages(imageList) %}
+  <div class="play-images">
+    <div class="play-images-dummy"></div>
+    <div class="play-image-list">
+      {% for image in imageList %}
+        <figure class="play-image-wrapper">
+          <figcaption class="play-caption2">{{ image.caption2 }}</figcaption>
+          <figcaption class="play-caption2">{{ image.caption3 }}</figcaption>
+          <figcaption class="play-caption2">{{ image.caption4 }}</figcaption>
+          <img class="play-image" src="{{ image.src }}" alt="{{ image.alt }}" />
+          <figcaption class="play-caption">{{ image.caption }}</figcaption>
+
+        </figure>
+      {% endfor %}
+    </div>
+  </div>
+{% endmacro %}
